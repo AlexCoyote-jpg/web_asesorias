@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>Alumno.home</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registroAsesoria</servlet-name>
+        <servlet-class>Alumno.registroAsesoria</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>citas_asesoria</servlet-name>
+        <servlet-class>Alumno.citas_asesoria</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registroAsesoria</servlet-name>
+        <url-pattern>/registroAsesoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>citas_asesoria</servlet-name>
+        <url-pattern>/citas_asesoria</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -1,0 +1,157 @@
+/* estilos.css - Estilos base reutilizables */
+
+:root {
+    --color-primario: #6cc3c3;
+    --color-secundario: #1e3c72;
+    --color-acento: #f9b233;
+    --color-fondo: #f4f6fa;
+    --color-texto: #222;
+    --color-blanco: #fff;
+    --color-gris: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: var(--color-blanco);
+    color: var(--color-texto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.logo {
+    height: 48px;
+}
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-link {
+    color: var(--color-texto);
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+.nav-link-activo, .nav-link:hover {
+    background: var(--color-primario);
+    color: var(--color-blanco) !important;
+}
+.cerrar-sesion {
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    background: var(--color-primario);
+    min-height: 60vh;
+}
+.main-content h1 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: var(--color-primario);
+}
+.titulo-bienvenida {
+    width: 100%;
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1.5rem 0 1rem 0;
+    letter-spacing: 1px;
+}
+.info-alumno {
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.foto-alumno {
+    width: 200px;
+    height: 200px;
+    background: var(--color-blanco);
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+}
+.contenedor-alumno {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+.acciones {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.btn-principal, .btn-secundario {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-principal {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+.btn-principal:hover {
+    background: var(--color-acento);
+    color: var(--color-texto);
+}
+.btn-secundario {
+    background: var(--color-blanco);
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+}
+.btn-secundario:hover {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+.footer {
+    background: var(--color-gris);
+    color: #555;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}

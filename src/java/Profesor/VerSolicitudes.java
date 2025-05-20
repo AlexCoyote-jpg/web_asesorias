@@ -4,16 +4,13 @@
  */
 package Profesor;
 
-import BD.ProcesaAsesoria;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
-import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelos.Estudiante;
+import modelos.Profesor;
 
 /**
  *
@@ -43,12 +40,12 @@ public class VerSolicitudes extends HttpServlet {
             out.println("    <link rel='stylesheet' href='estilos.css'>");
             out.println("</head>");
             out.println("<body>");
-            Estudiante alumno = (Estudiante) request.getSession().getAttribute("alumno");
-            if (alumno == null) {
+            Profesor profesor = (Profesor) request.getSession().getAttribute("profesor");
+            if (profesor == null) {
                 response.sendRedirect("login/iniciarsesion.jsp");
                 return;
             }
-            out.println("    <div class='titulo-bienvenida'>BIENVENIDO: <span style='border-bottom:2px solid #fff; padding:0 2rem;'>" + alumno.getNombre() + "</span></div>");
+            out.println("    <div class='titulo-bienvenida'>BIENVENIDO: <span style='border-bottom:2px solid #fff; padding:0 2rem;'>" + profesor.getNombre() + "</span></div>");
             out.println("    <header class='header'>");
             out.println("        <img src='imagenes/logo.png' alt='Logo' class='logo' style='height:60px;'>");
             out.println("        <nav class='nav'>");
@@ -58,22 +55,7 @@ public class VerSolicitudes extends HttpServlet {
             out.println("            <a href='login/iniciarsesion.jsp' class='nav-link cerrar-sesion'>CERRAR SESIÓN</a>");
             out.println("        </nav>");
             out.println("    </header>");
-            out.println("    <main class='main-content'>");
-            out.println("        <h2>Tus citas de asesoría</h2>");
-            out.println("        <table border='1'><tr><th>Materia</th><th>Fecha</th><th>Hora</th><th>Estado</th><th>Comentario</th></tr>");
-            int idAlumno = alumno.getIdEstudiante();
-            List<Map<String, Object>> citas = ProcesaAsesoria.getAsesoriasPorAlumno(idAlumno);
-            for (Map<String, Object> cita : citas) {
-                out.println("<tr>");
-                out.println("<td>" + cita.get("materia") + "</td>");
-                out.println("<td>" + cita.get("fecha_solicitud") + "</td>");
-                out.println("<td>" + cita.get("hora_solicitud") + "</td>");
-                out.println("<td>" + cita.get("estado") + "</td>");
-                out.println("<td>" + (cita.get("comentario") != null ? cita.get("comentario") : "") + "</td>");
-                out.println("</tr>");
-            }
-            out.println("        </table>");
-            out.println("    </main>");
+            
             out.println("    <footer class='footer'>");
             out.println("        &copy; 2025 Asesorías Web | Mentorízate");
             out.println("    </footer>");

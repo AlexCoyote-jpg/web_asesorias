@@ -63,8 +63,7 @@ public class homeprofesorr extends HttpServlet {
             out.println("            <strong>Clave:</strong><br>" + profesor.getClaveProfesor());
             out.println("            </div>");
             out.println("            <div class='foto-profesor'>");
-            out.println("                <!-- Aquí va la foto del profesor -->");
-            out.println("                <svg width='180' height='180'><line x1='0' y1='0' x2='180' y2='180' stroke='#444' stroke-width='3'/><line x1='180' y1='0' x2='0' y2='180' stroke='#444' stroke-width='3'/></svg>");
+            out.println("                <img src='imagenes/profesor.png' alt='Foto predeterminada del profesor' width='180' height='180' '>");
             out.println("            </div>");
             out.println("        </div>");
             out.println("    </main>");

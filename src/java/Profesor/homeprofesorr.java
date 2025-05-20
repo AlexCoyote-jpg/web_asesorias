@@ -53,7 +53,7 @@ public class homeprofesorr extends HttpServlet {
             out.println("        <nav class='nav'>");
             out.println("            <a href='home' class='nav-link nav-link-activo'>HOME</a>");
             out.println("            <a href='VerSolicitudes' class='nav-link'>VER SOLICITUDES</a>");
-            out.println("            <a href='citas_asesoria' class='nav-link'> SOLICITUDES PROXIMAS</a>");
+            out.println("            <a href='SolicitudesProximas' class='nav-link'> SOLICITUDES PROXIMAS</a>");
             out.println("            <a href='login/iniciarsesion.jsp' class='nav-link cerrar-sesion'>CERRAR SESIÓN</a>");
             out.println("        </nav>");
             out.println("    </header>");

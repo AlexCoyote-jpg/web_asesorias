@@ -12,6 +12,18 @@
         <servlet-name>citas_asesoria</servlet-name>
         <servlet-class>Alumno.citas_asesoria</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>homeprofesorr</servlet-name>
+        <servlet-class>Profesor.homeprofesorr</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerSolicitudes</servlet-name>
+        <servlet-class>Profesor.VerSolicitudes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SolicitudesProximas</servlet-name>
+        <servlet-class>Profesor.SolicitudesProximas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>home</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>citas_asesoria</servlet-name>
         <url-pattern>/citas_asesoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>homeprofesorr</servlet-name>
+        <url-pattern>/homeprofesorr</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerSolicitudes</servlet-name>
+        <url-pattern>/VerSolicitudes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SolicitudesProximas</servlet-name>
+        <url-pattern>/SolicitudesProximas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

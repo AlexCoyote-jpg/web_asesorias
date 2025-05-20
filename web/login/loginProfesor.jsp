@@ -1,6 +1,6 @@
 
 
-
+//
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="BD.ProcesaProfesor" %>
 <%@page import="modelos.Profesor" %>
@@ -17,21 +17,21 @@
             <div class="bienvenida bienvenida-grande">BIENVENIDO PROFESOR</div>
             <% String mensaje = "";
             if (request.getMethod().equalsIgnoreCase("POST")) {
-                String matricula = request.getParameter("matricula");
+                String clave_profesor = request.getParameter("clave_profesor");
                 String contrasena = request.getParameter("contrasena");
-                Profesor alumno = ProcesaProfesor.autenticarProfesor(matricula, contrasena);
-                if (alumno != null) {
-                    session.setAttribute("alumno", alumno);
-                    response.sendRedirect(request.getContextPath() + "/home");
+                Profesor profesor = ProcesaProfesor.autenticarProfesor(clave_profesor, contrasena);
+                if (profesor != null) {
+                    session.setAttribute("profesor", profesor);
+                    response.sendRedirect(request.getContextPath() + "/homeprofesorr");
                     return;
                 } else {
-                    mensaje = "Matrícula o contraseña incorrecta.";
+                    mensaje = "clave_profesor o contraseña incorrecta.";
                 }
             }
             %>
             <form class="form-login" action="" method="post">
-                <label for="matricula" class="label-login label-login-center">Usuario:</label>
-                <input type="number" id="matricula" name="matricula" class="input-login" required placeholder="Ingresa tu matrícula"><br>
+                <label for="clave_profesor" class="label-login label-login-center">Usuario:</label>
+                <input type="number" id="clave_profesor" name="clave_profesor" class="input-login" required placeholder="Ingresa tu matrícula"><br>
                 <label for="contrasena" class="label-login label-login-center">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" class="input-login" required placeholder="Ingresa tu contraseña"><br>
                 <button type="submit" class="btn-login btn-login-efecto">INICIAR SESIÓN</button>

@@ -50,8 +50,8 @@ public class VerSolicitudes extends HttpServlet {
             out.println("        <img src='imagenes/logo.png' alt='Logo' class='logo' style='height:60px;'>");
             out.println("        <nav class='nav'>");
             out.println("            <a href='homeprofesorr' class='nav-link'>HOME</a>");
-            out.println("            <a href='VerSolicitudes' class='nav-link'> VER SOLICITUDES </a>");
-            out.println("            <a href='citas_asesoria' class='nav-link nav-link-activo'>SOLICITUDES PROXIMAS</a>");
+            out.println("            <a href='VerSolicitudes' class='nav-link nav-link-activo'> VER SOLICITUDES </a>");
+            out.println("            <a href='SolicitudesProximas' class='nav-link'>SOLICITUDES PROXIMAS</a>");
             out.println("            <a href='login/iniciarsesion.jsp' class='nav-link cerrar-sesion'>CERRAR SESIÓN</a>");
             out.println("        </nav>");
             out.println("    </header>");

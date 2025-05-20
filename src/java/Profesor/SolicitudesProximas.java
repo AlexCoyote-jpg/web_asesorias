@@ -30,13 +30,13 @@ public class SolicitudesProximas extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       try (PrintWriter out = response.getWriter()) {
+        try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html lang='es'>");
             out.println("<head>");
             out.println("    <meta charset='UTF-8'>");
             out.println("    <meta name='viewport' content='width=device-width, initial-scale=1.0'>");
-            out.println("    <title>Solicitar Asesoría</title>");
+            out.println("    <title>Solicitudes Proximas</title>");
             out.println("    <link rel='stylesheet' href='estilos.css'>");
             out.println("</head>");
             out.println("<body>");
@@ -51,7 +51,7 @@ public class SolicitudesProximas extends HttpServlet {
             out.println("        <nav class='nav'>");
             out.println("            <a href='homeprofesorr' class='nav-link'>HOME</a>");
             out.println("            <a href='VerSolicitudes' class='nav-link nav-link-activo'> VER SOLICITUDES </a>");
-            out.println("            <a href='SolicitudesProximas' class='nav-link'>SOLICITUDES PROXIMAS</a>");
+            out.println("            <a href='VerSolicitudes' class='nav-link nav-link-activo'>SOLICITUDES PROXIMAS</a>");
             out.println("            <a href='login/iniciarsesion.jsp' class='nav-link cerrar-sesion'>CERRAR SESIÓN</a>");
             out.println("        </nav>");
             out.println("    </header>");

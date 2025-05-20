@@ -59,12 +59,12 @@ public class home extends HttpServlet {
             out.println("    <main class='main-content'>");
             out.println("        <div class='contenedor-alumno'>");
             out.println("            <div class='info-alumno'>");
-            out.println("                Nombre completo del alumno:<br><br>");
-            out.println("                Matricula:");
+            out.println("                Nombre completo del alumno: <strong>" + alumno.getNombre() + "</strong><br><br>");
+            out.println("                Matrícula: <strong>" + alumno.getMatricula() + "</strong>");
             out.println("            </div>");
             out.println("            <div class='foto-alumno'>");
             out.println("                <!-- Aquí va la foto del alumno -->");
-            out.println("                <svg width='180' height='180'><line x1='0' y1='0' x2='180' y2='180' stroke='#444' stroke-width='3'/><line x1='180' y1='0' x2='0' y2='180' stroke='#444' stroke-width='3'/></svg>");
+            out.println("                <img src='imagenes/estudiante.png' alt='Foto predeterminada del alumno' width='180' height='180' '>");
             out.println("            </div>");
             out.println("        </div>");
             out.println("    </main>");

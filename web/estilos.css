@@ -155,3 +155,48 @@ body {
 .mb-2 {
     margin-bottom: 2rem;
 }
+
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2px solid black; /* Contorno de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    border: 1px solid black; /* Contorno de las celdas */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #f2f2f2; /* Fondo gris claro para los encabezados */
+    font-weight: bold;
+}
+
+/* Estilo para los botones dentro de la tabla */
+button {
+    background-color: #4CAF50; /* Fondo verde para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+

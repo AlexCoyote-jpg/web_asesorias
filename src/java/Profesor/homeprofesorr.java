@@ -57,13 +57,13 @@ public class homeprofesorr extends HttpServlet {
             out.println("    </header>");
             //Cuerpo
             out.println("    <main class='main-content'>");
-            out.println("        <div class='contenedor-profesor'>");
-            out.println("            <div class='info-profesor'>");
+            out.println("        <div class='contenedor-alumno'>");
+            out.println("            <div class='info-alumno'>");
             out.println("            <strong>Nombre completo:</strong><br>" + profesor.getNombre() + "<br><br>");
             out.println("            <strong>Clave:</strong><br>" + profesor.getClaveProfesor());
             out.println("            </div>");
-            out.println("            <div class='foto-profesor'>");
-            out.println("                <img src='imagenes/profesor.png' alt='Foto predeterminada del profesor' width='180' height='180' '>");
+            out.println("            <div class='foto-alumno'>");
+            out.println("                <img src='imagenes/profesor.png' alt='Foto predeterminada del alumno' width='180' height='180' '>");
             out.println("            </div>");
             out.println("        </div>");
             out.println("    </main>");

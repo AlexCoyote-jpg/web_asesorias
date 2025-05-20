@@ -35,6 +35,39 @@ public class VerSolicitudes extends HttpServlet {
             out.println("<head><title>Solicitudes</title><meta charset='UTF-8'>");
             out.println("<meta name='viewport' content='width=device-width, initial-scale=1.0'>");
             out.println("<link rel='stylesheet' href='estilos.css'></head><body>");
+            out.println("<style>");
+out.println("table {");
+out.println("    width: 100%;");
+out.println("    border-collapse: collapse;");
+out.println("    background-color: white;");
+out.println("    border: 2px solid black;");
+out.println("}");
+out.println("th, td {");
+out.println("    border: 1px solid black;");
+out.println("    padding: 8px;");
+out.println("    text-align: left;");
+out.println("}");
+out.println("th {");
+out.println("    background-color: #f2f2f2;");
+out.println("    font-weight: bold;");
+out.println("}");
+out.println("button {");
+out.println("    background-color: #4CAF50;");
+out.println("    color: white;");
+out.println("    padding: 10px 20px;");
+out.println("    border: none;");
+out.println("    cursor: pointer;");
+out.println("    border-radius: 5px;");
+out.println("    margin-top: 10px;");
+out.println("}");
+out.println("button:hover {");
+out.println("    background-color: #45a049;");
+out.println("}");
+out.println("form {");
+out.println("    display: flex;");
+out.println("    flex-direction: column;");
+out.println("}");
+out.println("</style>");
             //Bienvenida
             out.println("    <div class='titulo-bienvenida'>BIENVENIDO: <span style='border-bottom:2px solid #fff; padding:0 2rem;'>" + profesor.getNombre() + "</span></div>");
             //Menu
@@ -51,7 +84,7 @@ public class VerSolicitudes extends HttpServlet {
             out.println("    <main class='main-content'>");
             out.println("        <div class='contenedor-profesor'>");
             out.println("<h2>Solicitudes por Aprobar</h2>");
-            out.println("<table border='1' cellpadding='8'>");
+out.println("<table style='width: 100%; border-collapse: collapse; background-color: white; border: 2px solid black;'>");
             out.println("<tr><th>Alumno</th><th>Matrícula</th><th>Programa</th><th>Materia</th><th>Fecha</th><th>Hora</th><th>Asunto</th><th>Es su alumno</th><th>Responder</th></tr>");
 
             for (Map<String, Object> s : solicitudes) {

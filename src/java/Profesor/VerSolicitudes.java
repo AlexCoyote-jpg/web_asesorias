@@ -66,8 +66,8 @@ public class VerSolicitudes extends HttpServlet {
                 out.println("<td>" + s.get("fecha_solicitud") + "</td>");
                 out.println("<td>" + s.get("hora_solicitud") + "</td>");
                 out.println("<td>" + s.get("asunto") + "</td>");
-                out.println("<td>" + ((s.get("es_tu_docente")).equals('1') ? "Sí" : "No") + "</td>");
-  
+                out.println("<td>" + ((Boolean.TRUE.equals(s.get("es_tu_docente"))) ? "Sí" : "No") + "</td>");
+                
                 out.println("<td>");
                 out.println("<form method='post' action='VerSolicitudes'>");
                 out.println("<input type='hidden' name='id_asesoria' value='" + s.get("id_asesoria") + "'/>");

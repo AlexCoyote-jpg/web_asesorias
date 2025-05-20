@@ -60,12 +60,11 @@ public class homeprofesorr extends HttpServlet {
             out.println("    <main class='main-content'>");
             out.println("        <div class='contenedor-profesor'>");
             out.println("            <div class='info-profesor'>");
-            out.println("                Nombre completo del profesor:<br><br>");
-            out.println("                Matricula:");
+            out.println("                Nombre completo del profesor: <strong>" + profesor.getNombre() + "</strong><br><br>");
+            out.println("                Matricula: <strong>" + profesor.getClaveProfesor() + "</strong>");
             out.println("            </div>");
             out.println("            <div class='foto-profesor'>");
-            out.println("                <!-- Aquí va la foto del profesor -->");
-            out.println("                <svg width='180' height='180'><line x1='0' y1='0' x2='180' y2='180' stroke='#444' stroke-width='3'/><line x1='180' y1='0' x2='0' y2='180' stroke='#444' stroke-width='3'/></svg>");
+            out.println("                <img src='imagenes/profesor.png' alt='Foto predeterminada del profesor' width='180' height='180' '>");
             out.println("            </div>");
             out.println("        </div>");
             out.println("    </main>");

@@ -63,7 +63,6 @@ public class home extends HttpServlet {
             out.println("                Matrícula: <strong>" + alumno.getMatricula() + "</strong>");
             out.println("            </div>");
             out.println("            <div class='foto-alumno'>");
-            out.println("                <!-- Aquí va la foto del alumno -->");
             out.println("                <img src='imagenes/estudiante.png' alt='Foto predeterminada del alumno' width='180' height='180' '>");
             out.println("            </div>");
             out.println("        </div>");

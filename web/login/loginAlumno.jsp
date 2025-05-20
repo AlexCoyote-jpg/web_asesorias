@@ -34,7 +34,7 @@
             %>
             <form class="form-login" action="" method="post">
                 <label for="matricula" class="label-login label-login-center">Usuario:</label>
-                <input type="text" id="matricula" name="matricula" class="input-login" required placeholder="Ingresa tu matrícula"><br>
+                <input type="number" id="matricula" name="matricula" class="input-login" required placeholder="Ingresa tu matrícula"><br>
                 <label for="contrasena" class="label-login label-login-center">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" class="input-login" required placeholder="Ingresa tu contraseña"><br>
                 <button type="submit" class="btn-login btn-login-efecto">INICIAR SESIÓN</button>
